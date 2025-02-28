@@ -10,7 +10,7 @@ namespace EjercicioCRUD.Models
     {
         private string connectionString = ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString;
 
-        public List<Item> ObtenerItems()
+        public List<Item> ObtenerItems(int pageNumber, int pageSize)
         {
             List<Item> items = new List<Item>();
 
@@ -18,6 +18,8 @@ namespace EjercicioCRUD.Models
             {
                 SqlCommand cmd = new SqlCommand("prc_ObtenerItems", conexion);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@PageNumber", pageNumber);
+                cmd.Parameters.AddWithValue("@PageSize", pageSize);
                 conexion.Open();
                 SqlDataReader lector = cmd.ExecuteReader();
 
@@ -32,17 +34,15 @@ namespace EjercicioCRUD.Models
                         Costo = Convert.ToDecimal(lector["Cost"]),
                         Cantidad = Convert.ToInt32(lector["Quantity"]),
                         IDProveedor = Convert.ToInt32(lector["SupplierID"]),
-                        Inactivo = lector["Inactive"] != DBNull.Value && Convert.ToBoolean(lector["Inactive"]),
+                        UltimaVenta = lector["LastSold"] != DBNull.Value ? Convert.ToDateTime(lector["LastSold"]) : (DateTime?)null,
                         UltimaActualizacion = Convert.ToDateTime(lector["LastUpdated"])
                     });
-
-                    // Depuración: Verificar que el campo Inactivo se está leyendo correctamente
-                    Console.WriteLine($"ID: {lector["ID"]}, Inactivo: {lector["Inactive"]}");
                 }
             }
-
             return items;
         }
+
+
         public void InsertarItem(Item item)
         {
             using (SqlConnection conexion = new SqlConnection(connectionString))
@@ -55,7 +55,7 @@ namespace EjercicioCRUD.Models
                 cmd.Parameters.AddWithValue("@Cost", item.Costo);
                 cmd.Parameters.AddWithValue("@Quantity", item.Cantidad);
                 cmd.Parameters.AddWithValue("@SupplierID", item.IDProveedor);
-                cmd.Parameters.AddWithValue("@Inactive", item.Inactivo);
+                cmd.Parameters.AddWithValue("@LastSold", (object)item.UltimaVenta ?? DBNull.Value);
                 conexion.Open();
                 cmd.ExecuteNonQuery();
             }
@@ -74,8 +74,20 @@ namespace EjercicioCRUD.Models
                 cmd.Parameters.AddWithValue("@Cost", item.Costo);
                 cmd.Parameters.AddWithValue("@Quantity", item.Cantidad);
                 cmd.Parameters.AddWithValue("@SupplierID", item.IDProveedor);
-                cmd.Parameters.AddWithValue("@Inactive", item.Inactivo);
+                cmd.Parameters.AddWithValue("@LastSold", (object)item.UltimaVenta ?? DBNull.Value);
                 conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        public void EliminarItem(int id)
+        {
+            using (SqlConnection conexion = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("prc_EliminarItem", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ID", id);
+                conexion.Open();
                 cmd.ExecuteNonQuery();
             }
         }

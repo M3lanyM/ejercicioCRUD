@@ -1,9 +1,15 @@
 ﻿@model IEnumerable<EjercicioCRUD.Models.Item>
 @{
-    ViewBag.Title = "Lista de Items";
+    ViewBag.Title = "Lista de Ítems";
 }
 
 <h2>Lista de Ítems</h2>
+<a href="@Url.Action("IniciarSesion", "Cuenta")" class="btn btn-primary">
+    Volver a Iniciar Sesión
+</a>
+
+<a href="@Url.Action("CrearNuevo", "Item")" class="btn btn-success">Agregar Nuevo</a>
+
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -14,7 +20,7 @@
             <th>Cantidad</th>
             <th>Proveedor</th>
             <th>Última Actualización</th>
-            <th>Estado</th>
+            <th>Última Venta</th>
             <th>Acciones</th>
         </tr>
     </thead>
@@ -29,9 +35,7 @@
                 <td>@item.Cantidad</td>
                 <td>@item.IDProveedor</td>
                 <td>@item.UltimaActualizacion.ToString("dd/MM/yyyy")</td>
-                <td>
-                    @(item.Inactivo ? "Inactivo" : "Activo")
-                </td>
+                <td>@(item.UltimaVenta.HasValue ? item.UltimaVenta.Value.ToString("dd/MM/yyyy") : "N/A")</td>
                 <td>
                     <a href="@Url.Action("Editar", "Item", new { id = item.ID })" class="btn btn-primary btn-sm">Editar</a>
                     <form action="@Url.Action("Eliminar", "Item")" method="post" style="display:inline;">
@@ -44,4 +48,14 @@
     </tbody>
 </table>
 
-<a href="@Url.Action("CrearNuevo", "Item")" class="btn btn-success">Agregar Nuevo</a>
+<!-- Paginación -->
+<div class="text-center">
+    <ul class="pagination">
+        @if (ViewBag.PageNumber > 1)
+        {
+            <li><a href="@Url.Action("Index", new { page = ViewBag.PageNumber - 1, pageSize = ViewBag.PageSize })">&laquo; Anterior</a></li>
+        }
+        <li><span>Página @ViewBag.PageNumber</span></li>
+        <li><a href="@Url.Action("Index", new { page = ViewBag.PageNumber + 1, pageSize = ViewBag.PageSize })">Siguiente &raquo;</a></li>
+    </ul>
+</div>

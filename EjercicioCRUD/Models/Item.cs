@@ -5,7 +5,7 @@ using System.Web;
 
 namespace EjercicioCRUD.Models
 {
-	public class Item
+    public class Item
     {
         public int ID { get; set; }
         public string CodigoBusqueda { get; set; }
@@ -14,7 +14,7 @@ namespace EjercicioCRUD.Models
         public decimal Costo { get; set; }
         public int Cantidad { get; set; }
         public int IDProveedor { get; set; }
-        public bool Inactivo { get; set; }
+        public DateTime? UltimaVenta { get; set; }
         public DateTime UltimaActualizacion { get; set; }
     }
 }
