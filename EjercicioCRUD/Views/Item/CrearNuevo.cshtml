@@ -1,0 +1,36 @@
+﻿@model EjercicioCRUD.Models.Item
+@{
+    ViewBag.Title = "Agregar Nuevo Ítem";
+}
+
+<h2>Agregar Nuevo Ítem</h2>
+
+@using (Html.BeginForm("CrearNuevo", "Item", FormMethod.Post))
+{
+    <div class="form-group">
+        <label>Código:</label>
+        @Html.TextBoxFor(m => m.CodigoBusqueda, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Descripción:</label>
+        @Html.TextBoxFor(m => m.Descripcion, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Precio:</label>
+        @Html.TextBoxFor(m => m.Precio, new { @class = "form-control", type = "number", step = "0.01" })
+    </div>
+    <div class="form-group">
+        <label>Cantidad:</label>
+        @Html.TextBoxFor(m => m.Cantidad, new { @class = "form-control", type = "text", inputmode = "numeric" }) <!-- Modificado -->
+    </div>
+    <div class="form-group">
+        <label>ID del Proveedor:</label>
+        @Html.TextBoxFor(m => m.IDProveedor, new { @class = "form-control", type = "text", inputmode = "numeric" }) <!-- Modificado -->
+    </div>
+    <div class="form-group">
+        <label>Inactivo:</label>
+        @Html.CheckBoxFor(m => m.Inactivo)
+    </div>
+    <button type="submit" class="btn btn-success">Guardar</button>
+    <a href="@Url.Action("Index", "Item")" class="btn btn-secondary">Volver</a>
+}

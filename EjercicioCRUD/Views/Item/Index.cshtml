@@ -1,0 +1,47 @@
+﻿@model IEnumerable<EjercicioCRUD.Models.Item>
+@{
+    ViewBag.Title = "Lista de Items";
+}
+
+<h2>Lista de Ítems</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Código</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Proveedor</th>
+            <th>Última Actualización</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.CodigoBusqueda</td>
+                <td>@item.Descripcion</td>
+                <td>@item.Precio</td>
+                <td>@item.Cantidad</td>
+                <td>@item.IDProveedor</td>
+                <td>@item.UltimaActualizacion.ToString("dd/MM/yyyy")</td>
+                <td>
+                    @(item.Inactivo ? "Inactivo" : "Activo")
+                </td>
+                <td>
+                    <a href="@Url.Action("Editar", "Item", new { id = item.ID })" class="btn btn-primary btn-sm">Editar</a>
+                    <form action="@Url.Action("Eliminar", "Item")" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@item.ID" />
+                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro?')">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("CrearNuevo", "Item")" class="btn btn-success">Agregar Nuevo</a>
