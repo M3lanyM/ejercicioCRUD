@@ -84,3 +84,6 @@ C:\Users\melan\OneDrive\Escritorio\PPS\EjercicioCRUD\EjercicioCRUD\obj\Debug\Eje
 C:\Users\melan\OneDrive\Escritorio\PPS\EjercicioCRUD\EjercicioCRUD\obj\Debug\Ejercici.C729937D.Up2Date
 C:\Users\melan\OneDrive\Escritorio\PPS\EjercicioCRUD\EjercicioCRUD\obj\Debug\EjercicioCRUD.dll
 C:\Users\melan\OneDrive\Escritorio\PPS\EjercicioCRUD\EjercicioCRUD\obj\Debug\EjercicioCRUD.pdb
+C:\Users\melan\OneDrive\Escritorio\PPS\EjercicioCRUD\EjercicioCRUD\bin\BouncyCastle.Crypto.dll
+C:\Users\melan\OneDrive\Escritorio\PPS\EjercicioCRUD\EjercicioCRUD\bin\itextsharp.dll
+C:\Users\melan\OneDrive\Escritorio\PPS\EjercicioCRUD\EjercicioCRUD\bin\itextsharp.xml
