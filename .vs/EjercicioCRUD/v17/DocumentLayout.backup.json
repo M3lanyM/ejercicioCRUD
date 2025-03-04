@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\melan\\OneDrive\\Escritorio\\PPS\\EjercicioCRUD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F8876E1-0D38-41AD-AC49-D24A140E9DDF}|EjercicioCRUD\\EjercicioCRUD.csproj|c:\\users\\melan\\onedrive\\escritorio\\pps\\ejerciciocrud\\ejerciciocrud\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8F8876E1-0D38-41AD-AC49-D24A140E9DDF}|EjercicioCRUD\\EjercicioCRUD.csproj|C:\\Users\\melan\\OneDrive\\Escritorio\\PPS\\EjercicioCRUD\\ejerciciocrud\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F8876E1-0D38-41AD-AC49-D24A140E9DDF}|EjercicioCRUD\\EjercicioCRUD.csproj|solutionrelative:ejerciciocrud\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -95,7 +95,7 @@
               "RelativeDocumentMoniker": "EjercicioCRUD\\Controllers\\ItemController.cs",
               "ToolTip": "C:\\Users\\melan\\OneDrive\\Escritorio\\PPS\\EjercicioCRUD\\EjercicioCRUD\\Controllers\\ItemController.cs",
               "RelativeToolTip": "EjercicioCRUD\\Controllers\\ItemController.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAswGQAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAAHIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T02:40:35.051Z",
               "IsPinned": true,
@@ -109,7 +109,7 @@
               "RelativeDocumentMoniker": "EjercicioCRUD\\Models\\PDFNumPag.cs",
               "ToolTip": "C:\\Users\\melan\\OneDrive\\Escritorio\\PPS\\EjercicioCRUD\\EjercicioCRUD\\Models\\PDFNumPag.cs",
               "RelativeToolTip": "EjercicioCRUD\\Models\\PDFNumPag.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T06:01:40.859Z",
               "EditorCaption": ""
@@ -185,7 +185,7 @@
               "RelativeDocumentMoniker": "EjercicioCRUD\\Models\\Item.cs",
               "ToolTip": "C:\\Users\\melan\\OneDrive\\Escritorio\\PPS\\EjercicioCRUD\\EjercicioCRUD\\Models\\Item.cs",
               "RelativeToolTip": "EjercicioCRUD\\Models\\Item.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T07:17:06.538Z",
               "EditorCaption": ""

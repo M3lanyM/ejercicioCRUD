@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\melan\\OneDrive\\Escritorio\\PPS\\EjercicioCRUD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F8876E1-0D38-41AD-AC49-D24A140E9DDF}|EjercicioCRUD\\EjercicioCRUD.csproj|c:\\users\\melan\\onedrive\\escritorio\\pps\\ejerciciocrud\\ejerciciocrud\\models\\pdfnumpag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F8876E1-0D38-41AD-AC49-D24A140E9DDF}|EjercicioCRUD\\EjercicioCRUD.csproj|solutionrelative:ejerciciocrud\\models\\pdfnumpag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8F8876E1-0D38-41AD-AC49-D24A140E9DDF}|EjercicioCRUD\\EjercicioCRUD.csproj|c:\\users\\melan\\onedrive\\escritorio\\pps\\ejerciciocrud\\ejerciciocrud\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F8876E1-0D38-41AD-AC49-D24A140E9DDF}|EjercicioCRUD\\EjercicioCRUD.csproj|solutionrelative:ejerciciocrud\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F8876E1-0D38-41AD-AC49-D24A140E9DDF}|EjercicioCRUD\\EjercicioCRUD.csproj|C:\\Users\\melan\\OneDrive\\Escritorio\\PPS\\EjercicioCRUD\\ejerciciocrud\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F8876E1-0D38-41AD-AC49-D24A140E9DDF}|EjercicioCRUD\\EjercicioCRUD.csproj|solutionrelative:ejerciciocrud\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F8876E1-0D38-41AD-AC49-D24A140E9DDF}|EjercicioCRUD\\EjercicioCRUD.csproj|C:\\Users\\melan\\OneDrive\\Escritorio\\PPS\\EjercicioCRUD\\ejerciciocrud\\models\\pdfnumpag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F8876E1-0D38-41AD-AC49-D24A140E9DDF}|EjercicioCRUD\\EjercicioCRUD.csproj|solutionrelative:ejerciciocrud\\models\\pdfnumpag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F8876E1-0D38-41AD-AC49-D24A140E9DDF}|EjercicioCRUD\\EjercicioCRUD.csproj|C:\\Users\\melan\\OneDrive\\Escritorio\\PPS\\EjercicioCRUD\\ejerciciocrud\\views\\item\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -57,7 +57,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 272,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -89,13 +89,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ItemController.cs",
               "DocumentMoniker": "C:\\Users\\melan\\OneDrive\\Escritorio\\PPS\\EjercicioCRUD\\EjercicioCRUD\\Controllers\\ItemController.cs",
               "RelativeDocumentMoniker": "EjercicioCRUD\\Controllers\\ItemController.cs",
               "ToolTip": "C:\\Users\\melan\\OneDrive\\Escritorio\\PPS\\EjercicioCRUD\\EjercicioCRUD\\Controllers\\ItemController.cs",
               "RelativeToolTip": "EjercicioCRUD\\Controllers\\ItemController.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAAHIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T02:40:35.051Z",
               "IsPinned": true,
@@ -103,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PDFNumPag.cs",
               "DocumentMoniker": "C:\\Users\\melan\\OneDrive\\Escritorio\\PPS\\EjercicioCRUD\\EjercicioCRUD\\Models\\PDFNumPag.cs",
               "RelativeDocumentMoniker": "EjercicioCRUD\\Models\\PDFNumPag.cs",
@@ -179,13 +179,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\melan\\OneDrive\\Escritorio\\PPS\\EjercicioCRUD\\EjercicioCRUD\\Models\\Item.cs",
               "RelativeDocumentMoniker": "EjercicioCRUD\\Models\\Item.cs",
               "ToolTip": "C:\\Users\\melan\\OneDrive\\Escritorio\\PPS\\EjercicioCRUD\\EjercicioCRUD\\Models\\Item.cs",
               "RelativeToolTip": "EjercicioCRUD\\Models\\Item.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T07:17:06.538Z",
               "EditorCaption": ""
